@@ -22,8 +22,6 @@ const PassengerDropdown = ({adults,children,infants,increment,decrement,handleCa
     setOpen(false);
   };
 
- 
-
   const handleCancel = () => {
     handleCancelprop(initialAdults,initialChildren,initialInfants);
     handleClose();
@@ -36,6 +34,7 @@ const PassengerDropdown = ({adults,children,infants,increment,decrement,handleCa
     setTotal(adults+children+infants)
     handleClose();
   };
+  
   return (
     <div>
       <Button

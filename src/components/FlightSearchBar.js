@@ -23,7 +23,22 @@ const FlightSearchBar = () => {
   const handleClassChange = (event) => {
     setCabinClass(event.target.value);
   };
+  const increment = (type) => {
+    if (type === "adults") setAdults((prev) => prev + 1);
+    if (type === "children") setChildren((prev) => prev + 1);
+    if (type === "infants") setInfants((prev) => prev + 1);
+  };
 
+  const decrement = (type) => {
+    if (type === "adults" && adults > 1) setAdults((prev) => prev - 1);
+    if (type === "children" && children > 0) setChildren((prev) => prev - 1);
+    if (type === "infants" && infants > 0) setInfants((prev) => prev - 1);
+  };
+  const handleCancelprop=(iniAdults,iniChildren,iniInfants)=>{
+    setAdults(iniAdults);
+    setChildren(iniChildren);
+    setInfants(iniInfants)
+  }
   return (
     <Box
       sx={{
@@ -71,6 +86,9 @@ const FlightSearchBar = () => {
         setAdults={setAdults}
         setChildren={setChildren}
         setInfants={setInfants}
+        increment={increment}
+        decrement={decrement}
+        handleCancelprop={handleCancelprop}
       />
 
 
