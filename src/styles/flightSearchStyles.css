@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+}
+
+.flight-search-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.passenger-dropdown, .trip-type, .cabin-class {
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.passenger-dropdown:hover, .trip-type:hover, .cabin-class:hover {
+    border-color: #007bff;
+}
+
+.search-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+.flight-card {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.flight-card:hover {
+    transform: translateY(-5px);
+}
+
+.flight-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.flight-info h6 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.flight-info .flight-price {
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+}
