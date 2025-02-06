@@ -37,7 +37,7 @@ const FlightSearchForm = ({ adults, children, infants, cabinClass }) => {
   const [destinationEntityId, setDestinationEntityId] = useState("");
   const [flights, setFlights] = useState([]);
 
-  const fetchAirports = async (searchTerm, setSuggestions, isFrom = true) => {
+  const fetchAirports = async (searchTerm,setSuggestions, isFrom = true) => {
     try {
       const response = await axios.get(
         "https://sky-scrapper.p.rapidapi.com/api/v1/flights/searchAirport",
@@ -46,7 +46,7 @@ const FlightSearchForm = ({ adults, children, infants, cabinClass }) => {
           headers: {
             "X-RapidAPI-Host": "sky-scrapper.p.rapidapi.com",
             "X-RapidAPI-Key":
-              "e8d04fc012msh55144b95a7eabc2p1610a3jsn06081cd92727",
+              "0db0aa1238msh2ff090ae11415e6p1e7d61jsn7ca417944b96",
           },
         }
       );
@@ -138,7 +138,7 @@ const FlightSearchForm = ({ adults, children, infants, cabinClass }) => {
           headers: {
             "X-RapidAPI-Host": "sky-scrapper.p.rapidapi.com",
             "X-RapidAPI-Key":
-              "e8d04fc012msh55144b95a7eabc2p1610a3jsn06081cd92727",
+              "0db0aa1238msh2ff090ae11415e6p1e7d61jsn7ca417944b96",
           },
         }
       );
